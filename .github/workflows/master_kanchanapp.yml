@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP app to Azure Web App - KanchanApp
+name: Build and deploy ASP app to Azure Web App - kanchanApp
 
 on:
   push:
@@ -52,15 +52,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0EE16860C7C74F9A9409B331972CB24E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_83820D1A1843415AB0B9CC15DBBCB133 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E7F49CFB7FF0496595BC4327D851DA4D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E6FDA6FFAA8F4532BC615C756DCCFCD0 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_03BC14C495724977B762DC1BA52783BC }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F458E81E25984879A4EFDD16CA5EEC51 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'KanchanApp'
+          app-name: 'kanchanApp'
           slot-name: 'Production'
           package: .
           
